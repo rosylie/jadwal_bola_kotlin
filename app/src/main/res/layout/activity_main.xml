@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".MainActivity">
+<!--scrollview:  //https://www.youtube.com/watch?v=5GG0hA4FYZg&ab_channel=BESTCRIPT-->
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Menu"
+                android:textColor="@color/red"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ball" />
+
+            <TextView
+                android:id="@+id/usernameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="You're now logged in"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_klasemen"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="25dp"
+            android:elevation="4dp"
+            android:layout_height="0dp"
+            android:layout_width="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/standings"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="30dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="KLASEMEN"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsmedium"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_jadwal"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="25dp"
+            android:elevation="4dp"
+            android:layout_height="0dp"
+            android:layout_width="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/schedule"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="32dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="JADWAL"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsmedium"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_statistik"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="25dp"
+            android:elevation="4dp"
+            android:layout_height="0dp"
+            android:layout_width="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/statistics"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="30dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="STATISTIK"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsmedium"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_berita"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="25dp"
+            android:elevation="4dp"
+            android:layout_height="0dp"
+            android:layout_width="0dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/news"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="30dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="BERITA"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsmedium"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:text="Log Out"
+        />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

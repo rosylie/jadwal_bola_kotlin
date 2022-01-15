@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "417828247393",
+    "project_id": "lily-project-24",
+    "storage_bucket": "lily-project-24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417828247393:android:4bf353018ee3f771dd1720",
+        "android_client_info": {
+          "package_name": "mwsp.lily.splashscreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417828247393-5amfdnq6go2dcm2mj90mmbt80ddp1poq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mwsp.lily.splashscreen",
+            "certificate_hash": "1fc0a534cfba6dec497db037ae3c23681668a1e7"
+          }
+        },
+        {
+          "client_id": "417828247393-j8fj4tf3qv5cit98vc283n8eq95h7vko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ24EeDBFnNDyasUAzb_IogrLG945ymfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417828247393-j8fj4tf3qv5cit98vc283n8eq95h7vko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
